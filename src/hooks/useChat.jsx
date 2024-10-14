@@ -6,6 +6,7 @@ const backendUrl = import.meta.env.VITE_APP_BACK;
 
 const ChatContext = createContext();
 
+
 export const ChatProvider = ({ children }) => {
   const chat = async (message) => {
     setLoading(true);
